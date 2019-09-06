@@ -1,0 +1,15 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    instance-id: eureka-client-two
+    appname: ${spring.application.name}}
+  client:
+    service-url:
+      defaultZone:
+        http://localhost:8082/eureka
